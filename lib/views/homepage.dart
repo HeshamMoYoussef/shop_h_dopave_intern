@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:get/state_manager.dart';
-import 'package:get/instance_manager.dart';
-import 'package:shop_h_dopave_intern/views/widgets/product_tile.dart';
-import 'package:shop_h_dopave_intern/controllers/product_controller.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:get/instance_manager.dart';
+import 'package:get/state_manager.dart';
+import 'package:shop_h_dopave_intern/controllers/product_controller.dart';
+import 'package:shop_h_dopave_intern/views/widgets/product_tile.dart';
 
 class HomePage extends StatelessWidget {
-  final ProductController productController = Get.put(ProductController());
   HomePage({super.key});
 
-  // final ProductController productController = Get.put(ProductController());
+  final ProductController productController = Get.put(ProductController());
 
   @override
   Widget build(BuildContext context) {
